@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9004A9A2447359E00FD25A4 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9004A992447359E00FD25A4 /* UIApplicationExtension.swift */; };
+		A905997A2448736A006F2F09 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90599792448736A006F2F09 /* MapView.swift */; };
+		A9361A5A2445ABB300C39E3E /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9361A592445ABB300C39E3E /* ProfilePicture.swift */; };
+		A9361A5E2445E09F00C39E3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9361A5D2445E09F00C39E3E /* ImagePicker.swift */; };
+		A98AD6EE24458D8700FE0051 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6ED24458D8700FE0051 /* UserService.swift */; };
+		A98AD6F024458F0100FE0051 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6EF24458F0100FE0051 /* User.swift */; };
+		A98AD6F22445912600FE0051 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F12445912600FE0051 /* UserViewModel.swift */; };
+		A98AD6F42445A71700FE0051 /* EditableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F32445A71700FE0051 /* EditableProfile.swift */; };
+		A98AD6F62445A73A00FE0051 /* NonEditableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F52445A73A00FE0051 /* NonEditableProfile.swift */; };
+		A9A37A8D2446F4010057FDB2 /* PlantBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A8C2446F4010057FDB2 /* PlantBox.swift */; };
+		A9A37A8F2446F4620057FDB2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A8E2446F4620057FDB2 /* Sensor.swift */; };
+		A9A37A912446F59B0057FDB2 /* PlantBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A902446F59B0057FDB2 /* PlantBoxService.swift */; };
+		A9A37A932446F6D10057FDB2 /* WebError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A922446F6D10057FDB2 /* WebError.swift */; };
+		A9A37A952446FAD30057FDB2 /* PlantBoxListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A942446FAD30057FDB2 /* PlantBoxListViewModel.swift */; };
+		A9A37A972446FC520057FDB2 /* PlantBoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */; };
+		A9A37A992447025E0057FDB2 /* PlantBoxCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A982447025E0057FDB2 /* PlantBoxCellView.swift */; };
+		A9A37A9B244709090057FDB2 /* PlantBoxDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A9A244709090057FDB2 /* PlantBoxDetailView.swift */; };
+		A9B51B612449D6E400DB0B67 /* MeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B51B602449D6E400DB0B67 /* MeasurementView.swift */; };
+		A9CA20C424444CD300BA914C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20C324444CD300BA914C /* AppDelegate.swift */; };
+		A9CA20C624444CD300BA914C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20C524444CD300BA914C /* SceneDelegate.swift */; };
+		A9CA20CA24444CD400BA914C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CA20C924444CD400BA914C /* Assets.xcassets */; };
+		A9CA20CD24444CD400BA914C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CA20CC24444CD400BA914C /* Preview Assets.xcassets */; };
+		A9CA20D024444CD400BA914C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CA20CE24444CD400BA914C /* LaunchScreen.storyboard */; };
+		A9CA20DB24444CD400BA914C /* plantcare_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20DA24444CD400BA914C /* plantcare_mobileTests.swift */; };
+		A9CA20E8244450AC00BA914C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20E7244450AC00BA914C /* MainTabView.swift */; };
+		A9CA20EC2444570E00BA914C /* PlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20EB2444570E00BA914C /* PlantListView.swift */; };
+		A9CA20EE244457E500BA914C /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20ED244457E500BA914C /* Plant.swift */; };
+		A9CA20F024445D1D00BA914C /* PlantCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20EF24445D1D00BA914C /* PlantCellView.swift */; };
+		A9CA20F224445DED00BA914C /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20F124445DED00BA914C /* PlantDetailView.swift */; };
+		A9CA20F424445F6800BA914C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20F324445F6800BA914C /* CircleImage.swift */; };
+		A9CA20F7244496B800BA914C /* PlantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20F6244496B800BA914C /* PlantService.swift */; };
+		A9CA20F924449C0E00BA914C /* PlantBoxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20F824449C0E00BA914C /* PlantBoxListView.swift */; };
+		A9CA20FC2444B6FF00BA914C /* PlantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20FB2444B6FF00BA914C /* PlantListViewModel.swift */; };
+		A9CA20FE2444B99F00BA914C /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20FD2444B99F00BA914C /* PlantViewModel.swift */; };
+		A9CA21012444BB1600BA914C /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA21002444BB1600BA914C /* ImageExtension.swift */; };
+		A9CA21032444C20D00BA914C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA21022444C20D00BA914C /* ProfileView.swift */; };
+		A9CA21052444C50700BA914C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA21042444C50700BA914C /* LoginView.swift */; };
+		A9CA21072444C89C00BA914C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA21062444C89C00BA914C /* SearchBar.swift */; };
+		A9CA210A2444F42500BA914C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA21092444F42500BA914C /* ActivityIndicator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9CA20D724444CD400BA914C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CA20B824444CD300BA914C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CA20BF24444CD300BA914C;
+			remoteInfo = "plantcare-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9004A992447359E00FD25A4 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		A90599792448736A006F2F09 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A9361A592445ABB300C39E3E /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
+		A9361A5D2445E09F00C39E3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A98AD6ED24458D8700FE0051 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A98AD6EF24458F0100FE0051 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A98AD6F12445912600FE0051 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A98AD6F32445A71700FE0051 /* EditableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableProfile.swift; sourceTree = "<group>"; };
+		A98AD6F52445A73A00FE0051 /* NonEditableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEditableProfile.swift; sourceTree = "<group>"; };
+		A9A37A8C2446F4010057FDB2 /* PlantBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBox.swift; sourceTree = "<group>"; };
+		A9A37A8E2446F4620057FDB2 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		A9A37A902446F59B0057FDB2 /* PlantBoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxService.swift; sourceTree = "<group>"; };
+		A9A37A922446F6D10057FDB2 /* WebError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebError.swift; sourceTree = "<group>"; };
+		A9A37A942446FAD30057FDB2 /* PlantBoxListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxListViewModel.swift; sourceTree = "<group>"; };
+		A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxViewModel.swift; sourceTree = "<group>"; };
+		A9A37A982447025E0057FDB2 /* PlantBoxCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxCellView.swift; sourceTree = "<group>"; };
+		A9A37A9A244709090057FDB2 /* PlantBoxDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxDetailView.swift; sourceTree = "<group>"; };
+		A9B51B602449D6E400DB0B67 /* MeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementView.swift; sourceTree = "<group>"; };
+		A9CA20C024444CD300BA914C /* plantcare-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plantcare-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CA20C324444CD300BA914C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9CA20C524444CD300BA914C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9CA20C924444CD400BA914C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9CA20CC24444CD400BA914C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9CA20CF24444CD400BA914C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9CA20D124444CD400BA914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CA20D624444CD400BA914C /* plantcare-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "plantcare-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CA20DA24444CD400BA914C /* plantcare_mobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantcare_mobileTests.swift; sourceTree = "<group>"; };
+		A9CA20DC24444CD400BA914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CA20E7244450AC00BA914C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A9CA20EB2444570E00BA914C /* PlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListView.swift; sourceTree = "<group>"; };
+		A9CA20ED244457E500BA914C /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		A9CA20EF24445D1D00BA914C /* PlantCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCellView.swift; sourceTree = "<group>"; };
+		A9CA20F124445DED00BA914C /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
+		A9CA20F324445F6800BA914C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A9CA20F6244496B800BA914C /* PlantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantService.swift; sourceTree = "<group>"; };
+		A9CA20F824449C0E00BA914C /* PlantBoxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxListView.swift; sourceTree = "<group>"; };
+		A9CA20FB2444B6FF00BA914C /* PlantListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantListViewModel.swift; sourceTree = "<group>"; };
+		A9CA20FD2444B99F00BA914C /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		A9CA21002444BB1600BA914C /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		A9CA21022444C20D00BA914C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A9CA21042444C50700BA914C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A9CA21062444C89C00BA914C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A9CA21092444F42500BA914C /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9CA20BD24444CD300BA914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CA20D324444CD400BA914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A98AD6F72445A74300FE0051 /* Profile Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA21022444C20D00BA914C /* ProfileView.swift */,
+				A98AD6F32445A71700FE0051 /* EditableProfile.swift */,
+				A98AD6F52445A73A00FE0051 /* NonEditableProfile.swift */,
+				A9361A592445ABB300C39E3E /* ProfilePicture.swift */,
+			);
+			path = "Profile Tab";
+			sourceTree = "<group>";
+		};
+		A9A37A8B2446E1370057FDB2 /* Plant Box Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20F824449C0E00BA914C /* PlantBoxListView.swift */,
+				A9A37A982447025E0057FDB2 /* PlantBoxCellView.swift */,
+				A9A37A9A244709090057FDB2 /* PlantBoxDetailView.swift */,
+				A9B51B602449D6E400DB0B67 /* MeasurementView.swift */,
+			);
+			path = "Plant Box Tab";
+			sourceTree = "<group>";
+		};
+		A9CA20B724444CD300BA914C = {
+			isa = PBXGroup;
+			children = (
+				A9CA20C224444CD300BA914C /* plantcare-mobile */,
+				A9CA20D924444CD400BA914C /* plantcare-mobileTests */,
+				A9CA20C124444CD300BA914C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9CA20C124444CD300BA914C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20C024444CD300BA914C /* plantcare-mobile.app */,
+				A9CA20D624444CD400BA914C /* plantcare-mobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CA20C224444CD300BA914C /* plantcare-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20FF2444BB0300BA914C /* Extension */,
+				A9CA20FA2444B69700BA914C /* View Model */,
+				A9CA20F5244491D200BA914C /* Service */,
+				A9CA20E62444508C00BA914C /* view */,
+				A9CA20E524444CDC00BA914C /* model */,
+				A9CA20C324444CD300BA914C /* AppDelegate.swift */,
+				A9CA20C524444CD300BA914C /* SceneDelegate.swift */,
+				A9CA20C924444CD400BA914C /* Assets.xcassets */,
+				A9CA20CE24444CD400BA914C /* LaunchScreen.storyboard */,
+				A9CA20D124444CD400BA914C /* Info.plist */,
+				A9CA20CB24444CD400BA914C /* Preview Content */,
+			);
+			path = "plantcare-mobile";
+			sourceTree = "<group>";
+		};
+		A9CA20CB24444CD400BA914C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20CC24444CD400BA914C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9CA20D924444CD400BA914C /* plantcare-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20DA24444CD400BA914C /* plantcare_mobileTests.swift */,
+				A9CA20DC24444CD400BA914C /* Info.plist */,
+			);
+			path = "plantcare-mobileTests";
+			sourceTree = "<group>";
+		};
+		A9CA20E524444CDC00BA914C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20ED244457E500BA914C /* Plant.swift */,
+				A98AD6EF24458F0100FE0051 /* User.swift */,
+				A9A37A8C2446F4010057FDB2 /* PlantBox.swift */,
+				A9A37A8E2446F4620057FDB2 /* Sensor.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A9CA20E62444508C00BA914C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A9A37A8B2446E1370057FDB2 /* Plant Box Tab */,
+				A98AD6F72445A74300FE0051 /* Profile Tab */,
+				A9CA210B2444F52400BA914C /* Plant Tab */,
+				A9CA21082444F3E300BA914C /* Custom Views */,
+				A9CA20E7244450AC00BA914C /* MainTabView.swift */,
+				A9CA21042444C50700BA914C /* LoginView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A9CA20F5244491D200BA914C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20F6244496B800BA914C /* PlantService.swift */,
+				A98AD6ED24458D8700FE0051 /* UserService.swift */,
+				A9A37A902446F59B0057FDB2 /* PlantBoxService.swift */,
+				A9A37A922446F6D10057FDB2 /* WebError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A9CA20FA2444B69700BA914C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20FB2444B6FF00BA914C /* PlantListViewModel.swift */,
+				A9CA20FD2444B99F00BA914C /* PlantViewModel.swift */,
+				A98AD6F12445912600FE0051 /* UserViewModel.swift */,
+				A9A37A942446FAD30057FDB2 /* PlantBoxListViewModel.swift */,
+				A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A9CA20FF2444BB0300BA914C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA21002444BB1600BA914C /* ImageExtension.swift */,
+				A9004A992447359E00FD25A4 /* UIApplicationExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A9CA21082444F3E300BA914C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA21062444C89C00BA914C /* SearchBar.swift */,
+				A9CA21092444F42500BA914C /* ActivityIndicator.swift */,
+				A9361A5D2445E09F00C39E3E /* ImagePicker.swift */,
+				A90599792448736A006F2F09 /* MapView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		A9CA210B2444F52400BA914C /* Plant Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA20EB2444570E00BA914C /* PlantListView.swift */,
+				A9CA20EF24445D1D00BA914C /* PlantCellView.swift */,
+				A9CA20F124445DED00BA914C /* PlantDetailView.swift */,
+				A9CA20F324445F6800BA914C /* CircleImage.swift */,
+			);
+			path = "Plant Tab";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9CA20BF24444CD300BA914C /* plantcare-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CA20DF24444CD400BA914C /* Build configuration list for PBXNativeTarget "plantcare-mobile" */;
+			buildPhases = (
+				A9CA20BC24444CD300BA914C /* Sources */,
+				A9CA20BD24444CD300BA914C /* Frameworks */,
+				A9CA20BE24444CD300BA914C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "plantcare-mobile";
+			productName = "plantcare-mobile";
+			productReference = A9CA20C024444CD300BA914C /* plantcare-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9CA20D524444CD400BA914C /* plantcare-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CA20E224444CD400BA914C /* Build configuration list for PBXNativeTarget "plantcare-mobileTests" */;
+			buildPhases = (
+				A9CA20D224444CD400BA914C /* Sources */,
+				A9CA20D324444CD400BA914C /* Frameworks */,
+				A9CA20D424444CD400BA914C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9CA20D824444CD400BA914C /* PBXTargetDependency */,
+			);
+			name = "plantcare-mobileTests";
+			productName = "plantcare-mobileTests";
+			productReference = A9CA20D624444CD400BA914C /* plantcare-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9CA20B824444CD300BA914C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Tobias Furtlehner";
+				TargetAttributes = {
+					A9CA20BF24444CD300BA914C = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					A9CA20D524444CD400BA914C = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = A9CA20BF24444CD300BA914C;
+					};
+				};
+			};
+			buildConfigurationList = A9CA20BB24444CD300BA914C /* Build configuration list for PBXProject "plantcare-mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9CA20B724444CD300BA914C;
+			productRefGroup = A9CA20C124444CD300BA914C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9CA20BF24444CD300BA914C /* plantcare-mobile */,
+				A9CA20D524444CD400BA914C /* plantcare-mobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9CA20BE24444CD300BA914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CA20D024444CD400BA914C /* LaunchScreen.storyboard in Resources */,
+				A9CA20CD24444CD400BA914C /* Preview Assets.xcassets in Resources */,
+				A9CA20CA24444CD400BA914C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CA20D424444CD400BA914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9CA20BC24444CD300BA914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CA20F024445D1D00BA914C /* PlantCellView.swift in Sources */,
+				A9A37A932446F6D10057FDB2 /* WebError.swift in Sources */,
+				A9CA20C424444CD300BA914C /* AppDelegate.swift in Sources */,
+				A98AD6EE24458D8700FE0051 /* UserService.swift in Sources */,
+				A9CA20C624444CD300BA914C /* SceneDelegate.swift in Sources */,
+				A9CA21052444C50700BA914C /* LoginView.swift in Sources */,
+				A9004A9A2447359E00FD25A4 /* UIApplicationExtension.swift in Sources */,
+				A9A37A912446F59B0057FDB2 /* PlantBoxService.swift in Sources */,
+				A98AD6F42445A71700FE0051 /* EditableProfile.swift in Sources */,
+				A905997A2448736A006F2F09 /* MapView.swift in Sources */,
+				A9CA20EC2444570E00BA914C /* PlantListView.swift in Sources */,
+				A9A37A9B244709090057FDB2 /* PlantBoxDetailView.swift in Sources */,
+				A9A37A952446FAD30057FDB2 /* PlantBoxListViewModel.swift in Sources */,
+				A98AD6F62445A73A00FE0051 /* NonEditableProfile.swift in Sources */,
+				A9CA21072444C89C00BA914C /* SearchBar.swift in Sources */,
+				A9CA20F224445DED00BA914C /* PlantDetailView.swift in Sources */,
+				A9CA20F7244496B800BA914C /* PlantService.swift in Sources */,
+				A9CA20F924449C0E00BA914C /* PlantBoxListView.swift in Sources */,
+				A9CA20E8244450AC00BA914C /* MainTabView.swift in Sources */,
+				A9CA20EE244457E500BA914C /* Plant.swift in Sources */,
+				A9361A5A2445ABB300C39E3E /* ProfilePicture.swift in Sources */,
+				A9A37A8F2446F4620057FDB2 /* Sensor.swift in Sources */,
+				A9CA21012444BB1600BA914C /* ImageExtension.swift in Sources */,
+				A9A37A972446FC520057FDB2 /* PlantBoxViewModel.swift in Sources */,
+				A98AD6F22445912600FE0051 /* UserViewModel.swift in Sources */,
+				A9CA20FE2444B99F00BA914C /* PlantViewModel.swift in Sources */,
+				A9CA20FC2444B6FF00BA914C /* PlantListViewModel.swift in Sources */,
+				A9CA21032444C20D00BA914C /* ProfileView.swift in Sources */,
+				A9CA20F424445F6800BA914C /* CircleImage.swift in Sources */,
+				A9A37A992447025E0057FDB2 /* PlantBoxCellView.swift in Sources */,
+				A9361A5E2445E09F00C39E3E /* ImagePicker.swift in Sources */,
+				A9CA210A2444F42500BA914C /* ActivityIndicator.swift in Sources */,
+				A98AD6F024458F0100FE0051 /* User.swift in Sources */,
+				A9B51B612449D6E400DB0B67 /* MeasurementView.swift in Sources */,
+				A9A37A8D2446F4010057FDB2 /* PlantBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CA20D224444CD400BA914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CA20DB24444CD400BA914C /* plantcare_mobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9CA20D824444CD400BA914C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CA20BF24444CD300BA914C /* plantcare-mobile */;
+			targetProxy = A9CA20D724444CD400BA914C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9CA20CE24444CD400BA914C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CA20CF24444CD400BA914C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9CA20DD24444CD400BA914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9CA20DE24444CD400BA914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9CA20E024444CD400BA914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"plantcare-mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = KPQ6YQPJUM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "plantcare-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.furtlehner.plantcare-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9CA20E124444CD400BA914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"plantcare-mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = KPQ6YQPJUM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "plantcare-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.furtlehner.plantcare-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9CA20E324444CD400BA914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPQ6YQPJUM;
+				INFOPLIST_FILE = "plantcare-mobileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.furtlehner.plantcare-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plantcare-mobile.app/plantcare-mobile";
+			};
+			name = Debug;
+		};
+		A9CA20E424444CD400BA914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPQ6YQPJUM;
+				INFOPLIST_FILE = "plantcare-mobileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.furtlehner.plantcare-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plantcare-mobile.app/plantcare-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9CA20BB24444CD300BA914C /* Build configuration list for PBXProject "plantcare-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CA20DD24444CD400BA914C /* Debug */,
+				A9CA20DE24444CD400BA914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CA20DF24444CD400BA914C /* Build configuration list for PBXNativeTarget "plantcare-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CA20E024444CD400BA914C /* Debug */,
+				A9CA20E124444CD400BA914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CA20E224444CD400BA914C /* Build configuration list for PBXNativeTarget "plantcare-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CA20E324444CD400BA914C /* Debug */,
+				A9CA20E424444CD400BA914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9CA20B824444CD300BA914C /* Project object */;
+}
