@@ -10,17 +10,19 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    let plantRequest:PlantService = PlantService()
+    @ObservedObject var plantListViewModel: PlantListViewModel = PlantListViewModel()
     
     var body: some View {
         TabView {
             PlantBoxListView()
+                .environmentObject(plantListViewModel)
                 .tabItem {
                     tabViewItem(text: "Plant Boxes", iconName: "archivebox.fill")
                 }
                 .tag(0)
             
             PlantListView()
+                .environmentObject(plantListViewModel)
                 .tabItem {
                     tabViewItem(text: "Plants", iconName: "circle.grid.hex")
                 }

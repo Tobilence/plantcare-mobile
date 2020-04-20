@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class PlantViewModel: ObservableObject, Identifiable {
+final class PlantViewModel: ObservableObject, Identifiable, Equatable {
     
     var id:String {
         get {
@@ -25,5 +25,9 @@ final class PlantViewModel: ObservableObject, Identifiable {
         self.trivialName = plant.trivialName
         self.description = plant.description
         self.picture = plant.picture
+    }
+    
+    static func == (lhs: PlantViewModel, rhs: PlantViewModel) -> Bool {
+        return lhs.scientificName == rhs.scientificName
     }
 }

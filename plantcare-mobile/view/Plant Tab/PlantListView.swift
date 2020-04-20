@@ -12,7 +12,7 @@ struct PlantListView: View {
     
     @State private var loading: Bool = true
     @State private var searchTerm: String = ""
-    @ObservedObject var plantListViewModel: PlantListViewModel = PlantListViewModel()
+    @EnvironmentObject var plantListViewModel: PlantListViewModel
     
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct PlantListView: View {
                     }) { plant in
                         NavigationLink(destination: PlantDetailView()
                             .environmentObject(PlantViewModel(plant: plant))) {
-                                PlantCellView()
+                                PlantCellView(width:100, height: 80)
                                     .environmentObject(PlantViewModel(plant: plant))
                         }
                     }

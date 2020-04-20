@@ -15,11 +15,11 @@ struct EditableProfile: View {
     var body: some View {
         VStack (spacing: 50) {
             VStack (spacing: 15) {
-                TextField("Email", text: $userViewModel.email)
+                TitledTextField(title: "Email", text: $userViewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("First Name", text: $userViewModel.firstName)
+                TitledTextField(title: "First Name", text: $userViewModel.firstName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Last Name", text: $userViewModel.lastName)
+                TitledTextField(title: "Last Name", text: $userViewModel.lastName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .frame(maxHeight: 300)

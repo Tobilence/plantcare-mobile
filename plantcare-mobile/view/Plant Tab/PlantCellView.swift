@@ -11,6 +11,8 @@ import SwiftUI
 struct PlantCellView: View {
     
     @EnvironmentObject var plantViewModel: PlantViewModel
+    var width: CGFloat
+    var height: CGFloat
     
     var body: some View {
         HStack {
@@ -21,7 +23,7 @@ struct PlantCellView: View {
                 Circle()
                     .stroke(Color.white, lineWidth: 2)
             )
-            .frame(width: 100, height: 80)
+            .frame(width: width, height: height)
             Text(plantViewModel.trivialName)
                 .font(.title)
                 .fontWeight(.light)
@@ -32,7 +34,7 @@ struct PlantCellView: View {
 
 struct PlantCellView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantCellView()
+        PlantCellView(width: 100, height: 80)
          .previewLayout(.fixed(width: 300, height: 90))
     }
 }

@@ -22,7 +22,10 @@ struct MapView: UIViewRepresentable {
         mapView.addAnnotations(locations)
         var centerCoordinate: CLLocationCoordinate2D = locations[0].coordinate
         if let main = mainPlantBox {
-            centerCoordinate = locations.filter {$0.title == main}[0].coordinate
+            let filteredLocations = locations.filter {$0.title == main}
+            if filteredLocations.count > 0 {
+                centerCoordinate = filteredLocations[0].coordinate
+            }
         }
         let span = MKCoordinateSpan(latitudeDelta: 0.4, longitudeDelta: 0.4)
         mapView.setCenter(centerCoordinate, animated: true)

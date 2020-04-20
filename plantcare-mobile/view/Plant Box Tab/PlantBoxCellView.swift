@@ -16,8 +16,12 @@ struct PlantBoxCellView: View {
         VStack {
             if plantBoxViewModel.uiImage != nil {
                 Image(uiImage: plantBoxViewModel.uiImage!)
-                    .padding()
-                    .cornerRadius(5)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(20)
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.white, lineWidth: 2))
+                    .shadow(radius: 10)
             } else {
                 Image("plantbox-placeholder")
                     .resizable()
