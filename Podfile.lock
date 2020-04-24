@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - FootlessParser (0.5.2)
+  - ReactiveSSE (0.3.2):
+    - FootlessParser (~> 0.5)
+    - ReactiveSwift (~> 6.0)
+  - ReactiveSwift (6.2.1)
+
+DEPENDENCIES:
+  - Charts
+  - ReactiveSSE
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - FootlessParser
+    - ReactiveSSE
+    - ReactiveSwift
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  FootlessParser: 521916d592fa6cba06cfca6f4b5d4f5a2d49175a
+  ReactiveSSE: 18c80e3ac30e9f084703799271de15af9c6e1a49
+  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+
+PODFILE CHECKSUM: 05f326c7740cc2e02d614829b4daef9a8d46a8c6
+
+COCOAPODS: 1.9.1

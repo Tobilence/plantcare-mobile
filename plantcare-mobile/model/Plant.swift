@@ -10,7 +10,11 @@ import Foundation
 
 struct Plant: Decodable, Identifiable{
     
-    let id = UUID()
+    var id: String {
+        get {
+            return scientificName
+        }
+    }
     let scientificName: String
     let trivialName: String
     let description: String

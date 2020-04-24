@@ -11,10 +11,10 @@ import Foundation
 class PlantBoxListViewModel: ObservableObject {
     
     @Published var plantBoxes:[PlantBoxViewModel] = []
-    var plantBoxService = PlantBoxService()
+    var plantBoxClient = PlantBoxClient()
     
     init() {
-        plantBoxService.getPlantBoxesForUser(withId: 14) { result in
+        plantBoxClient.getAllForUser(withId: 14) { result in
             switch result {
                 case .failure(let error):
                     print("Error occurred while trying to fetch plants: \(error)")

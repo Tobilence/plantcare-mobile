@@ -1,0 +1,6 @@
+framework module Pods_plantcare_mobile {
+  umbrella header "Pods-plantcare-mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

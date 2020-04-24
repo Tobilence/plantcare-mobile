@@ -8,55 +8,16 @@
 
 import Foundation
 
-enum UserError: Error {
-    case userNotFound
-    case unableToDecodeData
-    case responseProblem
-    case unableToEncodeData
-    case unableToCreateUrl
-}
-
-struct UserService {
-    
-    let baseUrlString: String
+class UserService : AbstractClient<User>{
     
     init() {
-        self.baseUrlString = "https://plantcare.msgis.net/api/data/users/"
+        super.init(urlEnding: "/user")
     }
     
-    func getUserInformation(forUserId: Int, completion: @escaping (Result<User, UserError>) -> Void) {
-        
-        guard let resourceURL = URL(string: "\(baseUrlString)\(forUserId)") else {
-            completion(.failure(.unableToCreateUrl))
-            return
-        }
-        
-        let dataTask = URLSession.shared.dataTask(with: resourceURL) {data, _, _ in
-            guard let jsonData = data else {
-                completion(.failure(.userNotFound))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let user = try decoder.decode(User.self, from: jsonData)
-                completion(.success(user))
-            } catch {
-                completion(.failure(UserError.unableToDecodeData))
-            }
-        }
-        dataTask.resume()
-    }
-    
-    func sendPost (user: User, completion: @escaping (Result<User, UserError>) -> Void) {
+    func sendPost (user: User, completion: @escaping (Result<User, WebError>) -> Void) {
         
         do {
-            guard let resourceURL = URL(string: "\(baseUrlString)") else {
-                completion(.failure(.unableToCreateUrl))
-                return
-            }
-            
-            var urlRequest = URLRequest(url: resourceURL)
+            var urlRequest = URLRequest(url: resourceUrl)
             urlRequest.httpMethod = "POST"
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
             urlRequest.httpBody = try JSONEncoder().encode(user)

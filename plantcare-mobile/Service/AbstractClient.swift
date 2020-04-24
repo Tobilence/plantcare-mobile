@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AbstractClient<T : Codable> {
+class AbstractClient<T : Codable> {
     
     private let baseUrl = "https://plantcare.msgis.net/api/data"
     let resourceUrl: URL

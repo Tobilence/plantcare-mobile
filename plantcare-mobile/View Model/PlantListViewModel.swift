@@ -11,17 +11,17 @@ import Foundation
 final class PlantListViewModel: ObservableObject {
     
     @Published var plants:[Plant] = []
-    let plantService = PlantService()
+    let plantClient = PlantClient()
     
     init() {
-        plantService.getAllPlants { result in
-            DispatchQueue.main.async {
-                switch result {
-                    case .failure(let error):
-                        print("Error occurred while trying to fetch plants: \(error)")
-                    case .success(let plants):
+        plantClient.getAll() { result in
+            switch result {
+                case .failure(let error):
+                    print("Error occurred while trying to fetch plants: \(error)")
+                case .success(let plants):
+                    DispatchQueue.main.async {
                         self.plants = plants
-                }
+                    }
             }
         }
     }

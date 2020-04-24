@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 ///The struct being used to receive plant boxes from the server
-struct PlantBox : Decodable{
+struct PlantBox : Decodable {
     
     var id: Int
     var name: String
@@ -32,4 +33,19 @@ struct PreparedPlantBox : Encodable {
     var longitude: Double
     var users: [User]
     var picture: String?
+    
+    init(plantBoxViewModel: PlantBoxViewModel) {
+        id = plantBoxViewModel.id
+        name = plantBoxViewModel.name
+        plantNames = plantBoxViewModel.plants.map{ $0.scientificName }
+        raspberryIdentifier = plantBoxViewModel.raspberryIdentifier
+        latitude = plantBoxViewModel.location.latitude
+        longitude = plantBoxViewModel.location.longitude
+        users = plantBoxViewModel.users.map {User(userViewModel: $0)}
+        if let image = plantBoxViewModel.uiImage {
+            picture = image.convertToBase64String()
+        } else {
+            picture = nil
+        }
+    }
 }
