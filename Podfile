@@ -7,7 +7,7 @@ target 'plantcare-mobile' do
 
   # Pods for plantcare-mobile
   pod 'Charts'
-  pod 'ReactiveSSE'
+  pod 'IKEventSource'
 
   target 'plantcare-mobileTests' do
     inherit! :search_paths

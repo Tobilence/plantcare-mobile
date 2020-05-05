@@ -12,8 +12,10 @@ final class PlantListViewModel: ObservableObject {
     
     @Published var plants:[Plant] = []
     let plantClient = PlantClient()
+    let loginViewRouter: LoginViewRouter
     
-    init() {
+    init(loginViewRouter: LoginViewRouter) {
+        self.loginViewRouter = loginViewRouter
         plantClient.getAll() { result in
             switch result {
                 case .failure(let error):
@@ -21,6 +23,7 @@ final class PlantListViewModel: ObservableObject {
                 case .success(let plants):
                     DispatchQueue.main.async {
                         self.plants = plants
+                        self.loginViewRouter.plantListLoaded = true
                     }
             }
         }

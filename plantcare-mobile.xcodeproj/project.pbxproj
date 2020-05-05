@@ -15,11 +15,13 @@
 		A925A57E244AE1A000BD3E00 /* UneditablePlantBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925A57D244AE1A000BD3E00 /* UneditablePlantBoxView.swift */; };
 		A9361A5A2445ABB300C39E3E /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9361A592445ABB300C39E3E /* ProfilePicture.swift */; };
 		A9361A5E2445E09F00C39E3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9361A5D2445E09F00C39E3E /* ImagePicker.swift */; };
+		A957344A245AC69000062F82 /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9573449245AC69000062F82 /* LoginViewRouter.swift */; };
+		A957344D245B054600062F82 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A957344C245B054600062F82 /* Shake.swift */; };
+		A957344F245B055300062F82 /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A957344E245B055300062F82 /* CustomActivityIndicator.swift */; };
 		A98AD6F024458F0100FE0051 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6EF24458F0100FE0051 /* User.swift */; };
 		A98AD6F22445912600FE0051 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F12445912600FE0051 /* UserViewModel.swift */; };
 		A98AD6F42445A71700FE0051 /* EditableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F32445A71700FE0051 /* EditableProfile.swift */; };
 		A98AD6F62445A73A00FE0051 /* NonEditableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98AD6F52445A73A00FE0051 /* NonEditableProfile.swift */; };
-		A9946715245068B300F4506F /* MeasurementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9946714245068B300F4506F /* MeasurementViewModel.swift */; };
 		A99467172450837C00F4506F /* SensorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99467162450837C00F4506F /* SensorValue.swift */; };
 		A9A37A8D2446F4010057FDB2 /* PlantBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A8C2446F4010057FDB2 /* PlantBox.swift */; };
 		A9A37A8F2446F4620057FDB2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A8E2446F4620057FDB2 /* Sensor.swift */; };
@@ -27,7 +29,15 @@
 		A9A37A972446FC520057FDB2 /* PlantBoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */; };
 		A9A37A992447025E0057FDB2 /* PlantBoxCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A982447025E0057FDB2 /* PlantBoxCellView.swift */; };
 		A9A37A9B244709090057FDB2 /* PlantBoxDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A37A9A244709090057FDB2 /* PlantBoxDetailView.swift */; };
+		A9AD83AA24541EC900A1442F /* SensorClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83A924541EC900A1442F /* SensorClientTest.swift */; };
+		A9AD83AC245422E400A1442F /* SensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83AB245422E400A1442F /* SensorViewModel.swift */; };
+		A9AD83AE2454614000A1442F /* MeasurementClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83AD2454614000A1442F /* MeasurementClient.swift */; };
+		A9AD83B02454660C00A1442F /* AllMeasurementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83AF2454660C00A1442F /* AllMeasurementsView.swift */; };
+		A9AD83B4245467E600A1442F /* LatestDataSensorClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83B3245467E600A1442F /* LatestDataSensorClient.swift */; };
+		A9AD83B62454826E00A1442F /* AllSensorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD83B52454826E00A1442F /* AllSensorValue.swift */; };
 		A9B51B612449D6E400DB0B67 /* MeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B51B602449D6E400DB0B67 /* MeasurementView.swift */; };
+		A9C72E59245B0C00002B340D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C72E58245B0C00002B340D /* MockData.swift */; };
+		A9C72E5B245BF74D002B340D /* SensorSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C72E5A245BF74D002B340D /* SensorSelection.swift */; };
 		A9CA20C424444CD300BA914C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20C324444CD300BA914C /* AppDelegate.swift */; };
 		A9CA20C624444CD300BA914C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA20C524444CD300BA914C /* SceneDelegate.swift */; };
 		A9CA20CA24444CD400BA914C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CA20C924444CD400BA914C /* Assets.xcassets */; };
@@ -84,11 +94,13 @@
 		A925A57D244AE1A000BD3E00 /* UneditablePlantBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UneditablePlantBoxView.swift; sourceTree = "<group>"; };
 		A9361A592445ABB300C39E3E /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
 		A9361A5D2445E09F00C39E3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A9573449245AC69000062F82 /* LoginViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewRouter.swift; sourceTree = "<group>"; };
+		A957344C245B054600062F82 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
+		A957344E245B055300062F82 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 		A98AD6EF24458F0100FE0051 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A98AD6F12445912600FE0051 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A98AD6F32445A71700FE0051 /* EditableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableProfile.swift; sourceTree = "<group>"; };
 		A98AD6F52445A73A00FE0051 /* NonEditableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEditableProfile.swift; sourceTree = "<group>"; };
-		A9946714245068B300F4506F /* MeasurementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewModel.swift; sourceTree = "<group>"; };
 		A99467162450837C00F4506F /* SensorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValue.swift; sourceTree = "<group>"; };
 		A9A37A8C2446F4010057FDB2 /* PlantBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBox.swift; sourceTree = "<group>"; };
 		A9A37A8E2446F4620057FDB2 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
@@ -96,7 +108,15 @@
 		A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxViewModel.swift; sourceTree = "<group>"; };
 		A9A37A982447025E0057FDB2 /* PlantBoxCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxCellView.swift; sourceTree = "<group>"; };
 		A9A37A9A244709090057FDB2 /* PlantBoxDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBoxDetailView.swift; sourceTree = "<group>"; };
+		A9AD83A924541EC900A1442F /* SensorClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorClientTest.swift; sourceTree = "<group>"; };
+		A9AD83AB245422E400A1442F /* SensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewModel.swift; sourceTree = "<group>"; };
+		A9AD83AD2454614000A1442F /* MeasurementClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementClient.swift; sourceTree = "<group>"; };
+		A9AD83AF2454660C00A1442F /* AllMeasurementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMeasurementsView.swift; sourceTree = "<group>"; };
+		A9AD83B3245467E600A1442F /* LatestDataSensorClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestDataSensorClient.swift; sourceTree = "<group>"; };
+		A9AD83B52454826E00A1442F /* AllSensorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSensorValue.swift; sourceTree = "<group>"; };
 		A9B51B602449D6E400DB0B67 /* MeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementView.swift; sourceTree = "<group>"; };
+		A9C72E58245B0C00002B340D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		A9C72E5A245BF74D002B340D /* SensorSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorSelection.swift; sourceTree = "<group>"; };
 		A9CA20C024444CD300BA914C /* plantcare-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plantcare-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CA20C324444CD300BA914C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9CA20C524444CD300BA914C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +187,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A95734442459A88A00062F82 /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				A9C72E58245B0C00002B340D /* MockData.swift */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		A957344B245B052B00062F82 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A957344C245B054600062F82 /* Shake.swift */,
+				A957344E245B055300062F82 /* CustomActivityIndicator.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		A98AD6F72445A74300FE0051 /* Profile Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,8 +225,41 @@
 				A9B51B602449D6E400DB0B67 /* MeasurementView.swift */,
 				A925A57B244AE02200BD3E00 /* EditablePlantBoxView.swift */,
 				A9F1DBD3244B42AF00CD015C /* AddPlantCellView.swift */,
+				A9AD83AF2454660C00A1442F /* AllMeasurementsView.swift */,
 			);
 			path = "Plant Box Tab";
+			sourceTree = "<group>";
+		};
+		A9AD83A824541EBC00A1442F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A9AD83A924541EC900A1442F /* SensorClientTest.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		A9AD83B1245467B400A1442F /* rest */ = {
+			isa = PBXGroup;
+			children = (
+				A9D2693C2452BB7F00F169DF /* ReadClient.swift */,
+				A9D269402452C1BB00F169DF /* ReadWriteClient.swift */,
+				A9D269422452C4B600F169DF /* PlantClient.swift */,
+				A9D269442452C5B100F169DF /* UserClient.swift */,
+				A9D269462452C5EF00F169DF /* PlantBoxClient.swift */,
+				A9D269482452C69400F169DF /* WebError.swift */,
+				A9D2694A2452C7AD00F169DF /* WebClient.swift */,
+			);
+			path = rest;
+			sourceTree = "<group>";
+		};
+		A9AD83B2245467CD00A1442F /* sse */ = {
+			isa = PBXGroup;
+			children = (
+				A9D2694C2452DD6D00F169DF /* SensorClient.swift */,
+				A9AD83AD2454614000A1442F /* MeasurementClient.swift */,
+				A9AD83B3245467E600A1442F /* LatestDataSensorClient.swift */,
+			);
+			path = sse;
 			sourceTree = "<group>";
 		};
 		A9CA20B724444CD300BA914C = {
@@ -215,6 +285,7 @@
 		A9CA20C224444CD300BA914C /* plantcare-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				A95734442459A88A00062F82 /* Mock Data */,
 				A9CA20FF2444BB0300BA914C /* Extension */,
 				A9CA20FA2444B69700BA914C /* View Model */,
 				A9D2693B2452BB5D00F169DF /* Client */,
@@ -241,6 +312,7 @@
 		A9CA20D924444CD400BA914C /* plantcare-mobileTests */ = {
 			isa = PBXGroup;
 			children = (
+				A9AD83A824541EBC00A1442F /* Client */,
 				A9CA20DA24444CD400BA914C /* plantcare_mobileTests.swift */,
 				A9CA20DC24444CD400BA914C /* Info.plist */,
 			);
@@ -255,6 +327,7 @@
 				A9A37A8C2446F4010057FDB2 /* PlantBox.swift */,
 				A9A37A8E2446F4620057FDB2 /* Sensor.swift */,
 				A99467162450837C00F4506F /* SensorValue.swift */,
+				A9AD83B52454826E00A1442F /* AllSensorValue.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -262,6 +335,7 @@
 		A9CA20E62444508C00BA914C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A957344B245B052B00062F82 /* Animations */,
 				A9A37A8B2446E1370057FDB2 /* Plant Box Tab */,
 				A98AD6F72445A74300FE0051 /* Profile Tab */,
 				A9CA210B2444F52400BA914C /* Plant Tab */,
@@ -280,7 +354,9 @@
 				A98AD6F12445912600FE0051 /* UserViewModel.swift */,
 				A9A37A942446FAD30057FDB2 /* PlantBoxListViewModel.swift */,
 				A9A37A962446FC520057FDB2 /* PlantBoxViewModel.swift */,
-				A9946714245068B300F4506F /* MeasurementViewModel.swift */,
+				A9AD83AB245422E400A1442F /* SensorViewModel.swift */,
+				A9573449245AC69000062F82 /* LoginViewRouter.swift */,
+				A9C72E5A245BF74D002B340D /* SensorSelection.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -323,14 +399,8 @@
 		A9D2693B2452BB5D00F169DF /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				A9D2693C2452BB7F00F169DF /* ReadClient.swift */,
-				A9D269402452C1BB00F169DF /* ReadWriteClient.swift */,
-				A9D269422452C4B600F169DF /* PlantClient.swift */,
-				A9D269442452C5B100F169DF /* UserClient.swift */,
-				A9D269462452C5EF00F169DF /* PlantBoxClient.swift */,
-				A9D269482452C69400F169DF /* WebError.swift */,
-				A9D2694A2452C7AD00F169DF /* WebClient.swift */,
-				A9D2694C2452DD6D00F169DF /* SensorClient.swift */,
+				A9AD83B2245467CD00A1442F /* sse */,
+				A9AD83B1245467B400A1442F /* rest */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -514,26 +584,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9C72E5B245BF74D002B340D /* SensorSelection.swift in Sources */,
 				A9CA20F024445D1D00BA914C /* PlantCellView.swift in Sources */,
 				A9CA20C424444CD300BA914C /* AppDelegate.swift in Sources */,
+				A9AD83B02454660C00A1442F /* AllMeasurementsView.swift in Sources */,
 				A9CA20C624444CD300BA914C /* SceneDelegate.swift in Sources */,
 				A9CA21052444C50700BA914C /* LoginView.swift in Sources */,
 				A9004A9A2447359E00FD25A4 /* UIApplicationExtension.swift in Sources */,
 				A98AD6F42445A71700FE0051 /* EditableProfile.swift in Sources */,
+				A9AD83B4245467E600A1442F /* LatestDataSensorClient.swift in Sources */,
 				A9D2694D2452DD6D00F169DF /* SensorClient.swift in Sources */,
+				A9AD83AE2454614000A1442F /* MeasurementClient.swift in Sources */,
 				A905997A2448736A006F2F09 /* MapView.swift in Sources */,
 				A99467172450837C00F4506F /* SensorValue.swift in Sources */,
 				A9CA20EC2444570E00BA914C /* PlantListView.swift in Sources */,
 				A9A37A9B244709090057FDB2 /* PlantBoxDetailView.swift in Sources */,
 				A9D269452452C5B100F169DF /* UserClient.swift in Sources */,
 				A9A37A952446FAD30057FDB2 /* PlantBoxListViewModel.swift in Sources */,
-				A9946715245068B300F4506F /* MeasurementViewModel.swift in Sources */,
 				A98AD6F62445A73A00FE0051 /* NonEditableProfile.swift in Sources */,
 				A9CA21072444C89C00BA914C /* SearchBar.swift in Sources */,
 				A9D269412452C1BB00F169DF /* ReadWriteClient.swift in Sources */,
 				A9CA20F224445DED00BA914C /* PlantDetailView.swift in Sources */,
+				A957344D245B054600062F82 /* Shake.swift in Sources */,
+				A9AD83AC245422E400A1442F /* SensorViewModel.swift in Sources */,
 				A9CA20F924449C0E00BA914C /* PlantBoxListView.swift in Sources */,
 				A9CA20E8244450AC00BA914C /* MainTabView.swift in Sources */,
+				A957344F245B055300062F82 /* CustomActivityIndicator.swift in Sources */,
 				A9F1DBD8244B77DE00CD015C /* ColorExtension.swift in Sources */,
 				A9F1DBD6244B67F700CD015C /* HalfModalView.swift in Sources */,
 				A925A57E244AE1A000BD3E00 /* UneditablePlantBoxView.swift in Sources */,
@@ -545,6 +621,7 @@
 				A9FCE1782450618900EB1325 /* LineChart.swift in Sources */,
 				A9A37A8F2446F4620057FDB2 /* Sensor.swift in Sources */,
 				A9CA21012444BB1600BA914C /* ImageExtension.swift in Sources */,
+				A957344A245AC69000062F82 /* LoginViewRouter.swift in Sources */,
 				A9A37A972446FC520057FDB2 /* PlantBoxViewModel.swift in Sources */,
 				A98AD6F22445912600FE0051 /* UserViewModel.swift in Sources */,
 				A9CA20FE2444B99F00BA914C /* PlantViewModel.swift in Sources */,
@@ -553,6 +630,7 @@
 				A9F1DBDA244C1DE200CD015C /* TitledTextField.swift in Sources */,
 				A9D269492452C69400F169DF /* WebError.swift in Sources */,
 				A9CA20F424445F6800BA914C /* CircleImage.swift in Sources */,
+				A9C72E59245B0C00002B340D /* MockData.swift in Sources */,
 				A9A37A992447025E0057FDB2 /* PlantBoxCellView.swift in Sources */,
 				A9361A5E2445E09F00C39E3E /* ImagePicker.swift in Sources */,
 				A9D269432452C4B600F169DF /* PlantClient.swift in Sources */,
@@ -562,6 +640,7 @@
 				A9B51B612449D6E400DB0B67 /* MeasurementView.swift in Sources */,
 				A925A57C244AE02200BD3E00 /* EditablePlantBoxView.swift in Sources */,
 				A9A37A8D2446F4010057FDB2 /* PlantBox.swift in Sources */,
+				A9AD83B62454826E00A1442F /* AllSensorValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AD83AA24541EC900A1442F /* SensorClientTest.swift in Sources */,
 				A9CA20DB24444CD400BA914C /* plantcare_mobileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FootlessParser.xcscheme</key>
+		<key>IKEventSource.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -20,16 +20,6 @@
 			<false/>
 		</dict>
 		<key>Pods-plantcare-mobileTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveSSE.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

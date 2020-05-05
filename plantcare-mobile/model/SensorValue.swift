@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct SensorValue {
+struct SensorValue: Decodable{
     
-    var timestamp: Date
+    var timestamp: String
     var hardwareId: String
     var unit: String
-    var value: String
+    var value: Double
 }

@@ -10,12 +10,15 @@ import SwiftUI
 
 struct MainTabView: View {
     
-    @ObservedObject var plantListViewModel: PlantListViewModel = PlantListViewModel()
+    @EnvironmentObject var plantListViewModel: PlantListViewModel
+    @EnvironmentObject var plantBoxViewModel: PlantBoxListViewModel
+    @EnvironmentObject var sensorViewModel: SensorViewModel
     
     var body: some View {
         TabView {
             PlantBoxListView()
                 .environmentObject(plantListViewModel)
+                .environmentObject(sensorViewModel)
                 .tabItem {
                     tabViewItem(text: "Plant Boxes", iconName: "archivebox.fill")
                 }

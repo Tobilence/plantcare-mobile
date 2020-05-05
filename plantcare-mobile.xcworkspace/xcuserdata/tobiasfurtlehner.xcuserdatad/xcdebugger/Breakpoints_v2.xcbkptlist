@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E04DAEDC-09A2-49F4-9290-1CCD06749D2A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3C150EB-7AC6-4838-90AF-B4DF0C4C72CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "plantcare-mobileTests/Client/SensorClientTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "testSpike()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "633F2E64-8FB9-4067-9870-A97E8A3E5390"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "plantcare-mobile/View Model/SensorSelection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "SensorType"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "633F2E64-8FB9-4067-9870-A97E8A3E5390 - c13e386354ec3d25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "plantcare_mobile.SensorType.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;plantcare_mobile.SensorType&gt;"
+                  moduleName = "plantcare-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasfurtlehner/Documents/Projects/swift/plantcare-mobile/plantcare-mobile/View%20Model/SensorSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "633F2E64-8FB9-4067-9870-A97E8A3E5390 - 40340ad9c518b6d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "plantcare_mobile.SensorType.rawValue.getter : Swift.String"
+                  moduleName = "plantcare-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tobiasfurtlehner/Documents/Projects/swift/plantcare-mobile/plantcare-mobile/View%20Model/SensorSelection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

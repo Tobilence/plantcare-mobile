@@ -12,8 +12,10 @@ class PlantBoxListViewModel: ObservableObject {
     
     @Published var plantBoxes:[PlantBoxViewModel] = []
     var plantBoxClient = PlantBoxClient()
+    let loginViewRouter: LoginViewRouter
     
-    init() {
+    init(loginViewRouter: LoginViewRouter) {
+        self.loginViewRouter = loginViewRouter
         plantBoxClient.getAllForUser(withId: 14) { result in
             switch result {
                 case .failure(let error):
@@ -21,8 +23,14 @@ class PlantBoxListViewModel: ObservableObject {
                 case .success(let plantBoxes):
                     DispatchQueue.main.async {
                         self.plantBoxes = plantBoxes.map { PlantBoxViewModel(plantBox: $0) }
+                        self.loginViewRouter.plantBoxListLoaded = true
                     }
             }
         }
+    }
+    
+    func didFinishLoading() -> Bool {
+        print("plantBox: \(plantBoxes.count)")
+        return plantBoxes.count > 0
     }
 }

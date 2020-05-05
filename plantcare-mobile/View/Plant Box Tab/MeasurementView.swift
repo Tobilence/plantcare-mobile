@@ -12,7 +12,7 @@ struct MeasurementView: View {
     
     var measurementName: String
     var unit: String
-    @State var value: Double
+    var value: Double
     
     var body: some View {
         VStack {

@@ -12,17 +12,20 @@ import MapKit
 struct UneditablePlantBoxView: View {
     
     @EnvironmentObject var plantBoxViewModel: PlantBoxViewModel
+    @EnvironmentObject var sensorViewModel: SensorViewModel
     @State var plantLocations: [MKPointAnnotation]
     @State private var showingSheet = false
     @State private var currentSheetType: SheetType? = nil
     @State private var detailPlantShowing: PlantViewModel?
     @State private var editable = false
+    @State private var chartRangeSelected: Int = 1
     @State private var halfModalShowing = false
+    @State private var sensorType: SensorType = .light
+    var mockData: MockData = MockData()
     
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-
         ZStack {
             ScrollView {
                 ZStack (alignment: .topTrailing){
@@ -34,18 +37,6 @@ struct UneditablePlantBoxView: View {
                             self.showingSheet = true
                     }
                     .frame(height: 200)
-                    
-                    //Weather Button
-                    Button(action: {
-                        self.currentSheetType = .weather
-                        self.showingSheet = true
-                    }) {
-                        Image(systemName: "sun.max.fill")
-                            .resizable()
-                            .padding()
-                            .frame(width: 65, height: 65)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    }
                 }
                 
                 //PlantBoxImage
@@ -94,23 +85,9 @@ struct UneditablePlantBoxView: View {
                 }.offset(y: -75)
                 
                 //Sensor Measurements
-                VStack (spacing: 10){
-                    Text("Measurements")
-                        .font(.headline)
-                        .fontWeight(.light)
-                    HStack (spacing: 75) {
-                        MeasurementView(measurementName: "Temperature", unit: "°C", value: 22.5)
-                        MeasurementView(measurementName: "Ground Humidity", unit: "%", value: 48.2)
-                    }
-                    HStack (spacing: 75) {
-                        MeasurementView(measurementName: "Air Pressure", unit: "hPa", value: 1.23)
-                        MeasurementView(measurementName: "Brightness", unit: "Lux", value: 73)
-                    }
-                }
-                .onTapGesture {
-                    self.halfModalShowing = true
-                }
-                .offset(y: -60)
+                AllMeasurementsView(halfModalShowing: $halfModalShowing, sensorType: $sensorType)
+                    .environmentObject(sensorViewModel)
+                    .offset(y: -60)
             }
             .sheet(isPresented: $showingSheet, onDismiss: resetSheet) {
                 ZStack (alignment: .topTrailing) {
@@ -140,7 +117,24 @@ struct UneditablePlantBoxView: View {
             }
             .padding(.top, 50)
             HalfModalView(isShown: $halfModalShowing) {
-                LineChart()
+//               ACTUAL DATA:
+//               LineChart(dataSet: self.sensorViewModel.lightData)
+//                    .padding(.bottom, 120)
+                
+                
+//               MOCK DATA:
+                VStack {
+                    Text(self.sensorType.rawValue)
+                    Picker(selection: self.$chartRangeSelected, label: Text("Light History")) {
+                        Text("Year").tag(3)
+                        Text("Month").tag(2)
+                        Text("Week").tag(1)
+                        Text("Day").tag(0)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    LineChart(dataSet: self.mockData.sampleData(sampleType: self.sensorType, displayRange: ChartDisplayType(rawValue: self.chartRangeSelected)!), type: ChartDisplayType(rawValue: self.chartRangeSelected)!)
+                        .padding(.bottom, 120)
+                }
             }
         }
         .navigationBarTitle(plantBoxViewModel.name)

@@ -69,7 +69,7 @@ class PlantBoxViewModel: ObservableObject, Identifiable {
             switch result {
             case .failure(let error):
                 print(error)
-            case .success(let result):
+            case .success:
                 print("plantBox saved successfully")
             }
         }
